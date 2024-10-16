@@ -73,13 +73,14 @@ body {
 
 /* POSICIONANAMIENTO Y ESTILO*/
 .recuadro-negro {
-    margin-left: 220px; /* Deja un margen suficiente a la derecha de la barra lateral */
-    padding: 20px;
-    background-color: #333; /* Fondo negro */
-    color: white;
-    width: calc(100% - 240px); /* Resta el ancho de la barra lateral */
+    background-color: #282A2B;
+    width: 104%; 
+    height: 70px;
+    position: relative;
+    overflow: visible;
+    margin: -19px;
+    top: 738px;
 }
-
 
 /* ESTILO DE TEXTO RECUADRO */
 .texto-recuadro-negro {
@@ -92,21 +93,15 @@ body {
 
 /* RECUADRO SUB*/ 
 .recuadro-sub {
-    margin-left: 220px; /* Alinea este recuadro al mismo nivel que el recuadro negro */
-    padding: 20px;
-    background-color: #444; /* Fondo gris oscuro */
-    color: white;
-    width: calc(100% - 240px); /* Alinea correctamente a la derecha de la barra azul */
-}
-.recuadro-negro h3, .recuadro-sub h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
+    background-color: #363839;
+    width: 104%; 
+    height: 200px; 
+    position: relative;
+    overflow: visible;
+    margin: -19px;
+    top: 734px;
 }
 
-.recuadro-negro p, .recuadro-sub p {
-    font-size: 16px;
-    margin-bottom: 8px;
-}
 /* ESTILO DEL SUB RECUADRO */
 .texto-recuadro-sub {
     color: #f5eded;
