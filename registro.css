@@ -22,6 +22,15 @@ label {
     margin-bottom: 15px;
     text-align: left;
 }
+/* Estilos para el campo de correo */
+input[type="email"] {
+    width: 100%;          /* Ocupa todo el ancho disponible */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
 
 input[type="text"],
 input[type="password"] {
@@ -61,3 +70,4 @@ input[type="password"] {
 #button:hover {
     background-color: #013d68; /* Color al pasar el cursor */
 }
+

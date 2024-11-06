@@ -1,29 +1,30 @@
-document.querySelectorAll('.estacionamiento').forEach((espacio) => {
-    espacio.addEventListener('click', function () {
-        const estacionamientoId = this.dataset.numero;
-        
-        const formData = new FormData();
-        formData.append('estacionamiento', estacionamientoId);
-
-        fetch('procesar_estacionamiento.php', {
+document.querySelectorAll('.estacionamiento').forEach(est => {
+    est.addEventListener('click', function () {
+        const estacionamiento_id = this.id.replace('est', ''); // Obtiene el ID numérico del estacionamiento
+        fetch('http://localhost/Taller1-main/procesar_estacionamiento.php', {
             method: 'POST',
-            body: formData
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: `estacionamiento_id=${estacionamiento_id}`
         })
         .then(response => response.text())
         .then(data => {
-            if (data.includes("Reservado")) {
-                alert("Estacionamiento reservado correctamente.");
-                this.classList.add('ocupado');
-            } else if (data.includes("Ocupado")) {
+            if (data === "Reservado") {
+                alert("El estacionamiento ha sido reservado.");
+                this.style.backgroundColor = 'blue';
+                this.textContent = ""; // Quita el número si está reservado
+            } else if (data === "Ocupado") {
                 alert("El estacionamiento ya está ocupado.");
-                this.classList.add('ocupado');
+                this.style.backgroundColor = 'grey';
+                this.textContent = ""; // Quita el número si está ocupado
             } else {
-                alert("Hubo un error. Intente nuevamente.");
+                alert("Error al reservar el estacionamiento.");
             }
         })
         .catch(error => {
-            console.error('Error al enviar los datos:', error);
-            alert('Hubo un problema al reservar el estacionamiento.');
+            console.error("Error al enviar los datos:", error);
+            alert("Hubo un problema al enviar los datos. Intente de nuevo.");
         });
     });
 });

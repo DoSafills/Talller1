@@ -1,4 +1,16 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
+header("Access-Control-Allow-Credentials: true");
+
+// El resto de tu código PHP...
+?>
+
+
+// El resto del código PHP
+
+
 // Conectar con la base de datos
 $servername = "localhost";
 $username = "root";
@@ -12,6 +24,8 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
+
+
 
 // Obtener datos del formulario
 $correo = $_POST['correo'];
