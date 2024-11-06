@@ -1,10 +1,8 @@
 <?php
-// procesar_registro.php
-
 // Conectar con la base de datos
 $servername = "localhost";
-$username = "tu_usuario_db";
-$password = "tu_contraseña_db";
+$username = "root";
+$password = "";
 $dbname = "bicicletero";
 
 // Crear conexión

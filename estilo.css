@@ -353,3 +353,60 @@ body {
     color: #045FB4; 
 
 }
+/* General */
+body {
+    background-color: #e6f2ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.imagenes img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#estacionamientos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.estacionamiento {
+    width: 80px;
+    height: 80px;
+    background-color: #66b3ff;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.estacionamiento.ocupado {
+    background-color: #cccccc;
+    color: transparent; /* Oculta el número en espacios ocupados */
+    pointer-events: none; /* Desactiva clic en ocupados */
+}
+
+.estacionamiento:hover {
+    background-color: #0059b3;
+}

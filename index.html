@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="registro.css">
     <title>Registro Estudiante</title>
-    <script src="registro.js" defer></script>
+ 
 </head>
 
 <body>
@@ -38,24 +38,18 @@
                 <form id="registro-form" method="POST" action="procesar_registro.php">
                     <h11 class="title">Registro</h11>
                     
-                    <!-- Campo de Nombre de usuario -->
-                    <label>
-                        <input type="text" id="username" name="username" placeholder="Nombre de Usuario" required>
-                    </label>
-                    
                     <!-- Campo de Correo -->
-                    <label>
-                        <input type="email" id="email" name="email" placeholder="Correo Institucional" required>
-                    </label>
-                
-                    <!-- Campo de Contraseña -->
-                    <label>
-                        <input type="password" id="password" name="password" placeholder="Contraseña" required>
-                    </label>
+    <label>
+        <input type="email" id="email" name="email" placeholder="Correo Institucional" required>
+    </label>
+    <!-- Campo de Contraseña -->
+    <label>
+        <input type="password" id="password" name="password" placeholder="Contraseña" required>
+    </label>
                     <!-- Enlace de "Olvidaste tu contraseña" con función de alerta -->
                     <a href="#" class="link" id="forgot-password">¿Olvidaste tu contraseña?</a>
                     <!-- Botón de registro -->
-                    <button id="button" type="submit">Registrar</button>
+                    <button id="button" type="submit">Registrarse</button>
                 </form>
             </div>
 
@@ -109,51 +103,6 @@
         
     </div>
 
-    <!-- Script para mostrar ventana de información al olvidar la contraseña -->
-    <script>
-        document.getElementById('forgot-password').addEventListener('click', function(event) {
-            event.preventDefault();
-            alert('Se ha enviado un correo para cambiar la contraseña.');
-        });
-    </script>
-
-    <!-- Script para enviar datos al backend -->
-    <script>
-        document.getElementById('button').addEventListener('click', (event) => {
-            event.preventDefault(); // Evitar que el formulario se envíe por defecto
-
-            // Obtener los valores del formulario
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const email = document.getElementById('email').value;
-
-            // Validación de correo
-            const emailRegex = /^[\w-]+@alu\.uct\.cl$|^[\w-]+@profe\.uct\.cl$/;
-            if (!emailRegex.test(email)) {
-                alert('El correo no pertenece a la institución.');
-                return;
-            }
-
-            // Enviar los datos al backend
-            fetch('http://localhost:3000/registrar', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    Rut: 12345678, // Captura el RUT del estudiante si es necesario
-                    Nombre: username,
-                    Correo: email,
-                    Contraseña: password
-                })
-            })
-            .then(response => response.text())
-            .then(data => {
-                alert(data); // Mostrar mensaje de confirmación
-            })
-            .catch(error => console.error('Error:', error));
-        });
-    </script>
-
+   <script src="registro.js" defer></script>
 </body>
 </html>
