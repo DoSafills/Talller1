@@ -26,5 +26,22 @@ document.querySelectorAll('.estacionamiento').forEach(est => {
             console.error("Error al enviar los datos:", error);
             alert("Hubo un problema al enviar los datos. Intente de nuevo.");
         });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Seleccionamos todos los estacionamientos
+            const estacionamientos = document.querySelectorAll('.estacionamiento');
+        
+            estacionamientos.forEach(estacionamiento => {
+                // Agregamos un evento de clic a cada estacionamiento
+                estacionamiento.addEventListener('click', () => {
+                    // Desmarcar todos los estacionamientos previamente seleccionados
+                    estacionamientos.forEach(est => est.classList.remove('seleccionado'));
+        
+                    // Marcar el estacionamiento actual como seleccionado
+                    estacionamiento.classList.add('seleccionado');
+                });
+            });
+        });
+        
     });
 });

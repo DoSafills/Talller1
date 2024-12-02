@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seleccionar Estacionamiento</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloSE.css">
     <script src="seleccion.js" defer></script>
 </head>
 <body>
-    <h1>Selecciona tu Estacionamiento</h1>
-    
-    <!-- Imágenes -->
-    <div class="imagenes">
-        <img src="ruta/a/tu/imagen1.jpg" alt="Imagen 1">
-        <img src="ruta/a/tu/imagen2.jpg" alt="Imagen 2">
-    </div>
+    <header class="header">
+        <h1>Estacionamiento UCT</h1>
+    </header>
 
-    <div id="estacionamientos">
-        <!-- Generaremos 10 botones para los estacionamientos -->
-        <div class="estacionamiento" id="est1" data-numero="1">1</div>
-        <div class="estacionamiento" id="est2" data-numero="2">2</div>
-        <div class="estacionamiento" id="est3" data-numero="3">3</div>
-        <div class="estacionamiento" id="est4" data-numero="4">4</div>
-        <div class="estacionamiento" id="est5" data-numero="5">5</div>
-        <div class="estacionamiento" id="est6" data-numero="6">6</div>
-        <div class="estacionamiento" id="est7" data-numero="7">7</div>
-        <div class="estacionamiento" id="est8" data-numero="8">8</div>
-        <div class="estacionamiento" id="est9" data-numero="9">9</div>
-        <div class="estacionamiento" id="est10" data-numero="10">10</div>
-    </div>
+    <main>
+        <section class="intro">
+            <p>Seleccione su estacionamiento disponible entre las opciones marcadas. De estar ya seleccionado este estara de amarillo</p>
+        </section>
+
+        <div class="imagenes">
+            <img src="ruta/a/tu/imagen1.jpg" alt="Imagen 1">
+            <img src="ruta/a/tu/imagen2.jpg" alt="Imagen 2">
+        </div>
+
+        <div id="estacionamientos">
+            <div class="estacionamiento" id="est1" data-numero="1">1</div>
+            <div class="estacionamiento" id="est2" data-numero="2">2</div>
+            <div class="estacionamiento" id="est3" data-numero="3">3</div>
+            <div class="estacionamiento" id="est4" data-numero="4">4</div>
+            <div class="estacionamiento" id="est5" data-numero="5">5</div>
+            <div class="estacionamiento" id="est6" data-numero="6">6</div>
+            <div class="estacionamiento" id="est7" data-numero="7">7</div>
+            <div class="estacionamiento" id="est8" data-numero="8">8</div>
+            <div class="estacionamiento" id="est9" data-numero="9">9</div>
+            <div class="estacionamiento" id="est10" data-numero="10">10</div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Universidad Católica de Temuco. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
