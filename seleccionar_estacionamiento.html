@@ -8,36 +8,31 @@
     <script src="seleccion.js" defer></script>
 </head>
 <body>
-    <header class="header">
-        <h1>Estacionamiento UCT</h1>
-    </header>
-
-    <main>
-        <section class="intro">
-            <p>Seleccione su estacionamiento disponible entre las opciones marcadas. De estar ya seleccionado este estara de amarillo</p>
-        </section>
+    <div class="contenedor">
+        <header class="header">
+            <h1>Estacionamiento UCT</h1>
+        </header>
 
         <div class="imagenes">
-            <img src="ruta/a/tu/imagen1.jpg" alt="Imagen 1">
-            <img src="ruta/a/tu/imagen2.jpg" alt="Imagen 2">
+            <img src="OIP2.jpg" alt="Imagen 1">
         </div>
 
-        <div id="estacionamientos">
-            <div class="estacionamiento" id="est1" data-numero="1">1</div>
-            <div class="estacionamiento" id="est2" data-numero="2">2</div>
-            <div class="estacionamiento" id="est3" data-numero="3">3</div>
-            <div class="estacionamiento" id="est4" data-numero="4">4</div>
-            <div class="estacionamiento" id="est5" data-numero="5">5</div>
-            <div class="estacionamiento" id="est6" data-numero="6">6</div>
-            <div class="estacionamiento" id="est7" data-numero="7">7</div>
-            <div class="estacionamiento" id="est8" data-numero="8">8</div>
-            <div class="estacionamiento" id="est9" data-numero="9">9</div>
-            <div class="estacionamiento" id="est10" data-numero="10">10</div>
-        </div>
-    </main>
+        <main>
+            <section class="intro">
+                <p>Seleccione un área de estacionamiento y elija un espacio disponible.</p>
+            </section>
 
-    <footer class="footer">
-        <p>© 2024 Universidad Católica de Temuco. Todos los derechos reservados.</p>
-    </footer>
+            <div class="areas">
+                <button class="area-btn" data-area="1">Área 1</button>
+                <button class="area-btn" data-area="2">Área 2</button>
+            </div>
+
+            <div id="estacionamientos" class="estacionamientos"></div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2024 Universidad Católica de Temuco. Todos los derechos reservados.</p>
+        </footer>
+    </div>
 </body>
 </html>

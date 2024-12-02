@@ -1,3 +1,41 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const areas = {
+        1: 15, // Área 1 con 10 estacionamientos
+        2: 10  // Área 2 con 15 estacionamientos
+    };
+
+    const areaButtons = document.querySelectorAll('.area-btn');
+    const estacionamientosContainer = document.getElementById('estacionamientos');
+
+    areaButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const area = button.getAttribute('data-area');
+            const totalEstacionamientos = areas[area];
+
+            // Limpiar estacionamientos existentes
+            estacionamientosContainer.innerHTML = '';
+
+            // Generar nuevos estacionamientos para el área seleccionada
+            for (let i = 1; i <= totalEstacionamientos; i++) {
+                const estacionamiento = document.createElement('div');
+                estacionamiento.className = 'estacionamiento';
+                estacionamiento.textContent = i;
+                estacionamiento.setAttribute('data-numero', i);
+
+                // Añadir evento para seleccionar estacionamiento
+                estacionamiento.addEventListener('click', () => {
+                    document.querySelectorAll('.estacionamiento').forEach(est => 
+                        est.classList.remove('seleccionado')
+                    );
+                    estacionamiento.classList.add('seleccionado');
+                });
+
+                estacionamientosContainer.appendChild(estacionamiento);
+            }
+        });
+    });
+})
+
 document.querySelectorAll('.estacionamiento').forEach(est => {
     est.addEventListener('click', function () {
         const estacionamiento_id = this.id.replace('est', ''); // Obtiene el ID numérico del estacionamiento
