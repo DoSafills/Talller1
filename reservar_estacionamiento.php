@@ -5,18 +5,10 @@ header("Access-Control-Allow-Headers: Content-Type");
 header("Access-Control-Allow-Credentials: true");
 
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "bicicletero";
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
-// Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
-}
+include 'conex.inc';
 
 // Obtener el ID del estacionamiento desde el POST
 $estacionamiento_id = $_POST['estacionamiento_id'];
