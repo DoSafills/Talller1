@@ -19,7 +19,7 @@ document.getElementById('registro-form').addEventListener('submit', function (ev
         contraseña: contraseña
     };
 
-    fetch('http://localhost/Taller1-main/procesar_registro.php', {
+    fetch('https://pillan.inf.uct.cl/~camilo.gangas/Taller1/procesar_registro.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

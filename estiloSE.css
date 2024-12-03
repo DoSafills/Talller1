@@ -114,3 +114,30 @@ body {
 .imagen-grande:hover {
     transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
 }
+
+/* Botón Aceptar */
+.boton-aceptar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#btnAceptar {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: not-allowed; /* Deshabilitado por defecto */
+    transition: background-color 0.3s ease;
+}
+
+#btnAceptar.enabled {
+    cursor: pointer;
+    background-color: #005bb5;
+}
+
+#btnAceptar:hover.enabled {
+    background-color: #004c99;
+}
+
