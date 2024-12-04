@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Bicicletero</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="registro.css">
+    <title>Registro Estudiante</title>
+ 
+</head>
+
+<body>
+    
+    <!-- Barra superior -->
+    <div class="barra-uct"></div>
+    <div class="contenedor">
+        
+        <!-- Borde izquierdo -->
+        <div class="left-border"></div>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <div class="seguridad-uct">
+                <h12> Tips de <span class="seguridad-color">Seguridad</span> </h12>
+                <p10> Jamás te enviaremos, ni a nombre de la Universidad Católica de Temuco ni de nuestros administrativos, correos<br> electrónicos, mensajes de texto, u otro tipo de mensajes electrónicos que soliciten información personal acerca<br> de tu cuenta.</p10>
+                <p11> El entregar sus contraseñas a terceras personas permite el envío de correo masivo no deseado (SPAM),<br> provocando que nuestro dominio internet ingrese a los registros de listas negras nacionales e internacionales, lo<br> que afecta la imagen corporativa de la Universidad Católica de Temuco. Además, impide el flujo normal de<br> información con entidades educacionales, centros de investigación y empresas en general.</p11>
+            </div>
+
+            <div class="titulo-container">
+                <img src="logocato.png" alt="Logo Cato" class="logo">
+                <h1>BICICLETERO UCT</h1>
+            </div>
+
+            <!-- Formulario de registro -->
+            <div class="registro-contenedor">
+                <form id="registro-form" method="POST" action="https://pillan.inf.uct.cl/~camilo.gangas/Taller1/registrar.php">
+                    <h11 class="title">Registro</h11>
+                    
+                    <!-- Campo de Correo -->
+    <label>
+        <input type="email" id="email" name="email" placeholder="Correo Institucional" required>
+    </label>
+    <!-- Campo de Contraseña -->
+    <label>
+        <input type="password" id="password" name="password" placeholder="Contraseña" required>
+    </label>
+                    <!-- Enlace de "Olvidaste tu contraseña" con función de alerta -->
+                    <a href="#" class="link" id="forgot-password">¿Olvidaste tu contraseña?</a>
+                    <!-- Botón de registro -->
+                    <button id="button" type="submit">Registrarse</button>
+                </form>
+            </div>
+
+            <div class="recuadro-sub">
+                
+                <p class="texto-recuadro-sub">DIRECCIONES <span class="campus-color">CAMPUS</span> </p>
+                <p9 class="texto-recuadro-sub2">TELEFONOS DE <span class="utilidad-color">UTILIDAD</span> </p9>
+                <div class="direccion-campus">
+                    
+                    <h3>CAMPUS SAN FRANCISCO</h3>
+                    <p>Manuel Montt 56<br>Fono: +56 45 2 205 470</p>
+                </div>
+                <div class="direccion-campus">
+                    <h4>CAMPUS SAN JUAN PABLO II</h4>
+                    <p1>Rudecindo Ortega 02950<br>Fono: +56 45 2 553 978</p1>
+                </div>
+                <div class="direccion-campus">
+                    <h5>CAMPUS MENCHACA LIRA</h5>
+                    <p2>Avenida Alemania 0422<br>Fono: +56 45 2 203 822</p2>
+                </div>
+                <div class="direccion-campus">
+                    <h6>CAMPUS LUIS RIVAS DEL CANTO</h6>
+                    <p3>Callejón Las Mariposas s/n<br>Fono: +56 45 2 205 596</p3>
+                </div>
+                <div class="direccion-campus">
+                    <h7>PRENSA INSTITUCIONAL</h7>
+                    <p4>Avenida Alemania 0211<br>Fono: +56 45 2 205 428</p4>
+                </div>
+                <div class="direccion-campus">
+                    <h8>BIENESTAR ESTUDIANTIL</h8>
+                    <p5>Manuel Montt 56<br>Fono: +56 45 2 205 424</p5>
+                </div>
+                <div class="direccion-campus">
+                    <h9>AULA MAGNA</h9>
+                    <p6>Manuel Montt 56<br>Fono: +56 45 2 205 471</p6>
+                </div>
+                <div class="direccion-campus">
+                    <h10>MESA CENTRAL</h10>
+                    <p7>Prieto Norte 371<br>Fono: +56 45 2 205 205</p7>
+                </div>
+            </div>
+            <div class="recuadro-negro">
+                <p class="texto-recuadro-negro">Bicicletero uct es un proyecto realizado por la Dirección de Desarrollo de Sistemas UCTemuco.
+                    Soporte, comentarios, errores reportarlos al correo: elgrupodepanas@gmail.com </p>
+
+            </div>
+            <p></p>
+        </div>
+        <div class="right-border"></div>
+        
+        
+    </div>
+
+   <!--script src="registro.js" defer></script-->
+</body>
+</html>

@@ -1,0 +1,412 @@
+/* ESTILOS */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 130vh;
+    background-color: white;
+}
+
+/* BARRA SUPERIOR */
+.barra-uct {
+    height: 40px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #333;
+}
+
+/* CONTENEDOR PARA LAS BARRAS LATERALES */
+.contenedor {
+    display: flex;
+    width: 100%;
+    flex-grow: 1; 
+}
+
+/* BORDE IZQUIERDO */
+.left-border {
+    width: 50%; 
+    background-color: #01568E;
+}
+
+/* CONTENIDO PRINCIPAL */
+.main-content {
+    width: 100%; 
+    background-color: white;
+    padding: 20px;
+}
+
+/* BORDE DERECHO */
+.right-border {
+    width: 50%; 
+    background-color: #01568E;
+}
+
+/* CONTENEDOR DEL TITULO */
+.titulo-container {
+    background-color: #01568E; 
+    padding: 1px; 
+    text-align: center; 
+    margin: -15px; 
+    overflow: visible; 
+    margin-top: -20px;
+}
+
+/* ESTILO DE H1 DENTRO DEL CONTENEDOR */
+.titulo-container h1 {
+    color: white; 
+    position: relative; 
+    top: -40px; 
+    left: 140px; 
+    font-size: 60px; 
+    margin: 0; 
+}
+
+/* LOGO UCT*/
+.logo {
+    position: relative; 
+    top: 40px; 
+    left: -330px;
+    width: 270px; 
+    height: auto; 
+}
+
+/* POSICIONANAMIENTO Y ESTILO*/
+.recuadro-negro {
+    background-color: #282A2B;
+    width: 104%; 
+    height: 70px;
+    position: relative;
+    overflow: visible;
+    margin: -19px;
+    top: 738px;
+}
+
+/* ESTILO DE TEXTO RECUADRO */
+.texto-recuadro-negro {
+    color: #888;
+    font-size: 17px; 
+    text-align: center; 
+    margin-top: -200;
+    position: relative;
+}
+
+/* RECUADRO SUB*/ 
+.recuadro-sub {
+    background-color: #363839;
+    width: 104%; 
+    height: 200px; 
+    position: relative;
+    overflow: visible;
+    margin: -19px;
+    top: 734px;
+}
+
+/* ESTILO DEL SUB RECUADRO */
+.texto-recuadro-sub {
+    color: #f5eded;
+    font-size: 17px;
+    position: absolute;
+    bottom: 150px;
+    right: 740px;
+}
+
+/* ESTILOS DE LOS TEXTOS */
+.direccion-campus h3 {
+    color: #DDD;
+    font-size: 14px;
+    position: absolute;
+    top: 105px;
+    line-height: 1.5;
+    font-size: 14px; 
+    left: 50px;
+}
+
+
+.direccion-campus p {
+    color: #DDD;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px; 
+    position: absolute;
+    top: 140px;
+    left: 50px;
+}
+
+.direccion-campus p1 {
+    color: #DDD;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px; 
+    position: absolute;
+    top: 70px;
+    left: 50px;
+}
+
+.direccion-campus h4 {
+    color: #DDD;
+    font-size: 14px;
+    position: absolute;
+    top: 30px;
+    line-height: 1.5;
+    font-size: 14px; 
+    left: 50px;
+}
+.direccion-campus h5 {
+    color: #DDD;
+    font-size: 14px;
+    position: absolute;
+    top: 25px;
+    line-height: 1.5;
+    font-size: 14px; 
+    left: 290px;
+}
+
+.direccion-campus p2 {
+    color: #DDD;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px; 
+    position: absolute;
+    top: 70px;
+    left: 290px;
+}
+
+.direccion-campus h6 {
+    color: #DDD;
+    font-size: 14px;
+    position: absolute;
+    top: 85px;
+    line-height: 1.5;
+    font-size: 14px; 
+    left: 290px;
+}
+
+.direccion-campus p3 {
+    color: #DDD;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px; 
+    position: absolute;
+    top: 139px;
+    left: 290px;
+}
+
+.direccion-campus h7 {
+    color: #DDD;
+    font-size: 14px;
+    position: absolute;
+    top: 47px;
+    line-height: 1.5;
+    font-size: 14px; 
+    left: 550px;
+}
+
+.direccion-campus p4 {
+    color: #DDD;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px; 
+    position: absolute;
+    top: 69px;
+    left: 550px;
+}
+
+.direccion-campus h8 {
+    color: #DDD;
+    font-size: 14px;
+    position: absolute;
+    top: 118px;
+    line-height: 1.5;
+    font-size: 14px; 
+    left: 550px;
+}
+
+.direccion-campus p5 {
+    color: #DDD;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px; 
+    position: absolute;
+    top: 139px;
+    left: 550px;
+}
+
+.direccion-campus h9 {
+    color: #DDD;
+    font-size: 14px;
+    position: absolute;
+    top: 47px;
+    line-height: 1.5;
+    font-size: 14px; 
+    left: 780px;
+}
+
+.direccion-campus p6 {
+    color: #DDD;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px; 
+    position: absolute;
+    top: 69px;
+    left: 780px;
+}
+
+.direccion-campus h10 {
+    color: #DDD;
+    font-size: 14px;
+    position: absolute;
+    top: 118px;
+    line-height: 1.5;
+    font-size: 14px; 
+    left: 780px;
+}
+
+.direccion-campus p7 {
+    color: #DDD;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px; 
+    position: absolute;
+    top: 139px;
+    left: 780px;
+}
+
+.direccion-campus p8 {
+    color: white;
+    top: 139px;
+    left: 780px;
+}
+
+.texto-recuadro-sub2 {
+    color: #f5eded;
+    font-size: 17px;
+    position: absolute;
+    bottom: 164px;
+    right:220px;
+
+}
+
+.campus-color{
+    color: #045FB4;
+    font-weight: bold;
+}
+
+.utilidad-color{
+    color: #045FB4;
+    font-weight: bold; 
+}
+
+/*CAMBIAR EL TIPO DE LETRA */
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 130vh;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* TIPS DE SEGURIDAD*/
+
+.seguridad-uct h12 {
+    color: #777;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 24px; 
+    position: absolute;
+    top: 660px;
+    left: 850px;
+}
+
+.seguridad-uct p10 {
+    color: #777;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 13px; 
+    position: absolute;
+    top: 720px;
+    left: 620px;
+
+
+}
+
+.seguridad-uct p11 {
+    color: #777;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 13px; 
+    position: absolute;
+    top: 790px;
+    left: 620px;
+
+
+}
+
+.seguridad-color {
+    color: #045FB4; 
+
+}
+/* General */
+body {
+    background-color: #e6f2ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.imagenes img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#estacionamientos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.estacionamiento {
+    width: 80px;
+    height: 80px;
+    background-color: #66b3ff;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.estacionamiento.ocupado {
+    background-color: #cccccc;
+    color: transparent; /* Oculta el número en espacios ocupados */
+    pointer-events: none; /* Desactiva clic en ocupados */
+}
+
+.estacionamiento:hover {
+    background-color: #0059b3;
+}

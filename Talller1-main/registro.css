@@ -1,0 +1,73 @@
+/* Estilos del formulario */
+form {
+    background-color: rgba(26, 26, 44, 0.8);
+    padding: 20px;
+    text-align: center;  /* Centra el contenido dentro del formulario */
+    width: 300px;        /* Ancho del formulario */
+    margin-left: 280px;
+    position: absolute;
+    top: 370px;
+}
+
+/* Estilo para el título */
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white
+}
+
+/* Estilo para las etiquetas y los campos de entrada */
+label {
+    display: block;
+    margin-bottom: 15px;
+    text-align: left;
+}
+/* Estilos para el campo de correo */
+input[type="email"] {
+    width: 100%;          /* Ocupa todo el ancho disponible */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;        /* Ocupa todo el ancho disponible */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo para el enlace de 'Olvidaste tu contraseña?' */
+.link {
+    display: block;
+    margin-bottom: 20px;
+    color: #01568E;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el botón de registro */
+#button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4C58C9; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#button:hover {
+    background-color: #013d68; /* Color al pasar el cursor */
+}
+
